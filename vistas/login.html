@@ -6,15 +6,21 @@
         <link rel ="stylesheet" href="../estilos/estilos_login.css">  
     </head>
     <body>
-       <header class="encabezado-principal"></header>
-    <script src="../js/header.js"></script> <!-- si lo guardas en un archivo JS -->
+      
+        <!--Encabezados-->
+        <header class = "encabezado-principal"></header>
+        <script src = "../js/header.js"></script>
 
-        <form>
+        <!--Formulario de Login-->
+        <form id="loginForm">
             <h2>Login</h2>
-            <input type ="text" placeholder="Usuario" required>
-            <input type ="email" placeholder="Contraseña" required>
-            <button type="submit">Enviar</button>
+            <input type="text" id="usuario" placeholder="usuario" required>
+            <input type="password" id="contraseña" placeholder="contraseña" required>
+            <button type="submit">Ingresar</button>
+            <p id="mensajeError" class="error"></p>
         </form>
+
+        <!--Tu logica ahora esta separada-->
+        <script src="../js/login.js"></script>
     </body>
 </html>
-
