@@ -1,11 +1,53 @@
-
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="es">
     <head>
-        <meta charset= "UTF-8">
-        <title>Hola</title>
-        <link rel ="stylesheet" href="../js/login.js">  
+        <meta charset="UTF-8">
+        <title>Menu Principal - IED Nobel Juan Manuel Santos</title>
+        <link rel="stylesheet" href="../estilos/estilos_menu.css">
     </head>
     <body>
-        <h1>Hola mundo</h1>
+        <div class="wrapper">
+            <script src="../js/header_sesion.js"></script>
+            
+            <!--Contenido Principal-->
+            <section class="menu-contenedor">
+                <h2>Bienvenido al sistema de elecciones escolares</h2>
+                <div class="tarjetas-grid">
+                    <a class="tarjeta" href="../vistas/crear_encuesta.html">
+                        <h3>📋 Crear Encuesta</h3>
+                        <p>Inscribe a los aprendices que seran los postulados para las elecciones.</p>
+                    </a>
+
+                    <a class="tarjeta" href="#">
+                        <h3>👤 Ver Candidatos</h3>
+                        <p>Conoce a los estudiantes postulados a personero.</p>
+                    </a>
+
+                    <a class="tarjeta" href="#">
+                        <h3>📝 Votar</h3>
+                        <p>Ingresa tu documento y selecciona tu candidato.</p>
+                    </a>
+
+                    <a class="tarjeta" href="#">
+                        <h3> 📊 Resultados</h3>
+                        <p>Consulta los resultados de las votaciones.</p>
+                    </a>
+
+                    <a class="tarjeta" href="../vistas/contacto.html">
+                        <h3>📞 Contacto</h3>
+                        <p>¿Tienes dudas? Contactanos.</p>
+                    </a>
+
+                    <a class="tarjeta" href="../vistas/login.html">
+                        <h3> 🔐 Cerrar Sesion</h3>
+                        <p>Salir del sistema de elecciones.</p>     
+                    </a>          
+                     </div>
+            </section>
+            <!--PIE DE PAGINA-->
+            <footer>
+                <P>&COPY; 2025 IED Nobel Juan Manuel Santos- Todos los derechos reservados.</P>
+            </footer>
+        </div>
     </body>
+</html>

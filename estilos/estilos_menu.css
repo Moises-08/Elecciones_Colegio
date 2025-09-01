@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    background-color: #f8f8f8;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-contenedor {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+/*TARJETAS DE MENU*/
+.menu-contenedor h2 {
+    color: #004080;
+    margin-bottom: 10%;
+    text-align:  center;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.tarjeta { 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgb(167, 167, 167);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color:#333;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0,0.2);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color:#004080;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #004080;
+    color:white;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+
+.tarjeta-grid { 
+    grid-template-columns: 1fr;
+
+}
+
+}
