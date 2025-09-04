@@ -45,10 +45,10 @@
          <!--Candidatos-->
          <section class="Candidatos">
             <h3>Registar Candidatos</h3>
-            <p>Puedes registrar hasta<strong>20 Candidatos</strong>.</p>
+            <p>Puedes registrar hasta<strong> 20 Candidatos</strong>.</p>
             <div id="candidatosContainer"></div>
 
-            <div style="text-aling:center; margin-top:20px">
+            <div style="text-aling: center; margin-top:20px">
                <button type="button" id="btnAgregar">Agregar candidato</button>
             </div>
          </section> 
@@ -108,8 +108,18 @@
                 '<input type="text" id="foto_' + contador + '" name="foto_' + contador + '"accept="image/*" required>' +
                 '</div>'+
                 '</div>';
+
+                //evento para eliminar candidato// 
+                candidatoDiv.querySelector(".btnEliminar").addEventListener("click",() => {
+                    candidatoDiv.remove();
+                });
+
+                container.appendChild(candidatoDiv);
             })
         })
     </script>
+    
 </body>
 </html>
+
+      
