@@ -48,7 +48,7 @@
             <p>Puedes registrar hasta<strong> 20 Candidatos</strong>.</p>
             <div id="candidatosContainer"></div>
 
-            <div style="text-aling: center; margin-top:20px">
+            <div style="text-align: center; margin-top: 20px;">
                <button type="button" id="btnAgregar">Agregar candidato</button>
             </div>
          </section> 
@@ -82,8 +82,8 @@
 
                 candidatoDiv.innerHTML =
                 '<div class="candidato-header">' + 
-                 '<h4>Candidato' + contador + '</h4>' +
-                 '<button type="button" class="btnEliminar" title="Eliminar candidato"></button>'+
+                 '<h4>Candidato ' + contador + '</h4>' +
+                 '<button type="button" class="btnEliminar" title="Eliminar candidato">X</button>'+
                  '</div>' +   
                 '<div class="form-grid">' +
                 '<div class="form-group">' +
@@ -96,16 +96,16 @@
                         '<input type="text" id="nombre_' + contador + '" name="nombre_' + contador + '"required>' +
                     '</div>'+
                     '<div class="form-group">' +
-                    '<label for="grado_' + contaodr + '">Grado</label>'+
+                    '<label for="grado_' + contador + '">Grado</label>'+
                 '<input type="text" id="grado_' + contador + '" name="grado_' + contador + '"required>' +
                 '</div>'+
                   '<div class="form-group">' +
-                    '<label for="grupo_' + contaodr + '">Grupo</label>'+
+                    '<label for="grupo_' + contador + '">Grupo</label>'+
                 '<input type="text" id="grupo_' + contador + '" name="grupo_' + contador + '"required>' +
                 '</div>'+  
                 '<div class="form-group">' +
-                    '<label for="foto_' + contaodr + '">Foto</label>'+
-                '<input type="text" id="foto_' + contador + '" name="foto_' + contador + '"accept="image/*" required>' +
+                    '<label for="foto_' + contador + '">Foto</label>'+
+                '<input type="file" id="foto_' + contador + '" name="foto_' + contador + '"accept="image/*" required>' +
                 '</div>'+
                 '</div>';
 
