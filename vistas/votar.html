@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Votar-Elecciones 2025</title>
+        <link rel="stylesheet" href="../estilos/estilos_votar.css">
+        <script src="../js/header_sesion.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <!--Header Dinamico-->
+            <header class="encabezado-principal"></header>
+
+            <main>
+                <h2>Votacion Elecciones 2025</h2>
+
+                <form id= "formVotar">
+                <!--Documento-->
+                <section class="datos-votante">
+                    <h3>  Identificacion del Votante </h3>
+                    <div class="form-group">
+                        <label for="documento"> Numero de Documento</label>
+                        <input type="text" id="documento" name="documento" placeholder="Ej:123456789" required>
+                    </div>
+                </section>
+
+                <!--Candidatos-->
+                <section class="lista-candidatos">
+                    <h3>Selecciona tu candidato</h3>
+                    <div style="text-align: center;" id="candidatosGrid" class="candidatos-grid">
+                        <!--Candidatos dinamicos (Ejemplo estatico)-->
+                        <label class="candidato-card">
+                            <input type="radio" name="candidato" value="1" required>
+                            <!--Me falta poner las imagenes en la carpeta img-->
+                            <img src="../img/Candidato1.JPG.jpeg" alt="Candidato 1">
+                            <h4>Candidato  1</h4>
+                            <p>Gradi 11 - Grupo A</p>
+                        </label>
+
+                        <label class=" candidato-card">
+                            <input type="radio" name="candidato" value="2">
+                            <!--Poner imagen del candidato numero 2-->
+                            <img src="../img/Candidato2.JPG.jpeg" alt="Candidato 2">
+                            <h4>Candidato 2</h4>
+                            <p>Grado 10 - Grupo B</p>
+                        </label>
+
+                            <label class=" candidato-card">
+                            <input type="radio" name="candidato" value="3">
+                            <!--Poner imagen del candidato numero 3-->
+                            <img src="../img/Candidato3.JPG.jpeg" alt="Candidato 3">
+                            <h4>Candidato 3</h4>
+                            <p>Grado 9 - Grupo C</p>
+                            </label>
+                      </div>
+                </section>
+
+                <!--Boton de Votar-->
+                <div style="text-align:center; margin-top: 30px;">
+                    <button type ="submit">Confirmar Voto</button>
+                </div>
+                </form>
+            </main>
+            <footer>
+                <p>&copy; 2025 - Colegio Ejemplo. Todos los derechos reservados.</p>
+            </footer>
+        </div>
+        <script>
+            document.getElementById("formVotar").addEventListener("submit", (e)=> {
+                e.preventDefault();
+                const documento = document.getElementById("documento").value;
+                const candidato = document.querySelector("input [name='candidato']:checked");
+
+                if (!candidato) {
+                    alert ("Por favor selecciona un candidato antes de continuar.");
+                    return;
+                }
+
+            alert (" Voto registrado con exito.\nDocumento: " + documento + "\nCandidato: " + candidato.value);
+            //Aqui luego conectamos con el  backend para registar el voto real
+            });
+        </script>
+    </body>
+</html>
