@@ -1,0 +1,102 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+}
+
+h2 { 
+    text-align: center;
+    padding: 15px;
+    margin: 100x;
+    height: 10px;
+    
+}
+section.info {
+    padding: 20px;
+    text-align: left;
+}
+
+section.info {
+    padding: 20px;
+    text-align: left;
+    max-width: 700px;
+    margin:auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba (0,0,0,0.1);
+}
+
+input, textarea,button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #16d310;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button_rojo {
+    background-color: #d31010;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/*Estilo del formulario de registro*/
+form {
+    background-color: #ffffff;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 35%;
+    margin-top: 10px;
+    margin:auto;
+    margin-top:5%;
+}
+
+.error {
+    color:red;
+    font-size: 14px;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+padding: 10px;
+font-size: 16px;
+margin: bottom 10px;
+border: radius 5px;
+border: 1px solid #ccc;
+}

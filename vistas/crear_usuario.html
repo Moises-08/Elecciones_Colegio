@@ -1,0 +1,57 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu Principal - IED Nobel Juan Manuel Santos</title>
+        <link rel="stylesheet" href="../estilos/estilos_menu.css">
+          
+    </head>
+    <body>
+       <link rel="stylesheet" href="../estilos/crear_usuario.css">
+    <body>
+          <div class="wrapper">
+            <script src="../js/header_sesion.js"></script>
+       
+         <h2>Crear Usuario</h2>
+            <!--Formulario de Login-->
+        <form id="usuarioForm">
+             <div class="form-grid">
+           <div class="form-group">
+            <lavel for="nombre">Nombre Completo: </lavel>
+            <input type="text" id="nombre" name="nombre" required>
+           </div>
+
+           <div class="form-group">
+            <label for="documento">Numero de documento: </label>
+            <input type="number" id="documento" name="documento" required>
+           </div>
+
+            <div class="form-group">
+            <label for="Correo">Correo Electronico: </label>
+            <input type="email" id="correo" name="correo" required>
+            </div>
+
+          <div class="form-group">
+            <label for="rol">Rol</label>
+            <select id="rol" name="rol" required>
+                <option value="">--Seleccione un Rol--</option>
+                <option value="jurado">Jurado</option>
+                <option value="estudiante">Estudiante</option>
+                 <option value="jurado">Jurado</option>
+            </select>
+            </div>
+
+            
+
+            <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" required>
+        </div>
+        
+          <button type="button" id="btnGuardar">Guardar Usuario</button>
+          <button class="button_rojo" type="button" id="btnCancelar">Cancelar</button>
+
+        
+
+        </form>
+    </body>
+</html>
